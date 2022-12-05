@@ -26,19 +26,19 @@ def home():
 
     with col1:
 
-        st.write("###### Random Forest Accuracy")
-        st.write("Train set accuracy: ", 0.9413)
-        st.write("Test set accuracy : ", 0.6941)
-        st.write('MSE', 0.2874)
-        st.write('RMSE', 0.5361)
+        st.write("###### Pipeline")
+        st.write("Train set accuracy: ", 0.742)
+        st.write("Test set accuracy : ", 0.649)
+        st.write('MSE', 0.602)
+        st.write('RMSE', 0.609)
     
     with col2:
 
         st.write("###### Decision Tree Accuracy")
-        st.write("Train set accuracy: ", 0.7235)
-        st.write("Test set accuracy : ", 0.6497)
-        st.write('MSE', 0.3291)
-        st.write('RMSE', 0.5736)
+        st.write("Train set accuracy: ", 0.731)
+        st.write("Test set accuracy : ", 0.527)
+        st.write('MSE', 0.488)
+        st.write('RMSE', 0.698)
 
     st.write('')
 
@@ -47,18 +47,17 @@ def home():
     with col1:
 
         st.write("###### KNN Accuracy")
-        st.write("Train set accuracy: ", 0.7290)
-        st.write("Test set accuracy : ", 0.7134)
-        st.write('MSE', 0.2691)
-        st.write('RMSE', 0.5189)
+        st.write("Train set accuracy: ", 0.81)
+        st.write("Test set accuracy : ", 0.633)
+        st.write('MSE', 0.378)
+        st.write('RMSE', 0.615)
 
     with col2:
 
-        st.write("###### SVM Accuracy")
-        st.write("Train set accuracy: ", 0.9099)
-        st.write("Test set accuracy : ", 0.4120)
-        st.write('MSE', 0.5452)
-        st.write('RMSE', 0.7383)
+        st.write("###### Linear Regression")
+        st.write("Train set accuracy: ", 0.479)
+        st.write("Test set accuracy : ", 0.489)
+        
 
 def predict_page():
     st.title('Enter & Predict!')
@@ -129,25 +128,14 @@ def explore():
         image = Image.open('./Image/heatmap.png')
         st.image(image, 'Heatmap')
     
-    exp = st.expander('Rainfall vs Max Temperature')
+    exp = st.expander('Data Description')
     with exp:
         image = Image.open('./Image/f1.png')
         st.image(image, 'Rainfall vs Max Temperature')
     
-    exp = st.expander('Rainfall vs Min Temperature')
-    with exp:
-        image = Image.open('./Image/f2.png')
-        st.image(image, 'Rainfall vs Min Temperature')
     
-    exp = st.expander('Rainfall vs Relative Humidity')
-    with exp:
-        image = Image.open('./Image/f3.png')
-        st.image(image, 'Rainfall vs Relative Humidity')
     
-    exp = st.expander('Rainfall vs Wind Speed')
-    with exp:
-        image = Image.open('./Image/f4.png')
-        st.image(image, 'Rainfall vs Wind Speed')
+    
 
 
 def team():
@@ -156,20 +144,20 @@ def team():
     col1, col2, col3, col4 = st.columns(4)        
     
     with col1:
-        image = Image.open('./Image/user.jpeg')
-        st.image(image, 'Namgay')
+        image = Image.open('./Image/p1.jpg')
+        st.image(image, 'Madav Dewrali')
         
-    # with col2:
-    #     image = Image.open('./Image/user.jpeg')
-    #     st.image(image, 'Ugyen Tenzin')
+    with col2:
+        image = Image.open('./Image/p2.jpg')
+        st.image(image, 'Kisan')
 
     with col3:
-        image = Image.open('./Image/user3.jpg')
-        st.image(image, 'Tshewang Dema')
+        image = Image.open('./Image/p3.jpg')
+        st.image(image, 'Namgay Wangchuk')
 
     with col4:
-        image = Image.open('./Image/user.jpeg')
-        st.image(image, 'Sonam Tobden')
+        image = Image.open('./Image/p4.jpg')
+        st.image(image, 'Kinzang Wangchuk')
 
 
 selected = option_menu(
