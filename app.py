@@ -159,9 +159,9 @@ def team():
         image = Image.open('./Image/user.jpeg')
         st.image(image, 'Namgay')
         
-    with col2:
-        image = Image.open('./Image/user.jpeg')
-        st.image(image, 'Ugyen Tenzin')
+    # with col2:
+    #     image = Image.open('./Image/user.jpeg')
+    #     st.image(image, 'Ugyen Tenzin')
 
     with col3:
         image = Image.open('./Image/user3.jpg')
