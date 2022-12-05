@@ -17,9 +17,10 @@ st.title('Rainfall Prediction')
 
 def home():
     st.write("###### Accuracy of rainfall forecasting has great importance for countries like Bhutan whose economy is largely dependent on hydro-power project and agriculture. ")
-
+    st.title('Machin Learning')
+    st.write('Machine learning (ML) is a type of artificial intelligence (AI) that allows software applications to become more accurate at predicting outcomes without being explicitly programmed to do so. Machine learning algorithms use historical data as input to predict new output values.')
     st.title('Prediction Accuracy')
-    st.write('The accuracy of the our model is 72.90 on train dataset and it is 71.34 on test dataset.')
+    st.write('The accuracy of the our model is 74.2 persentage on train dataset and it is 64.9 persentage on test dataset.')
     st.write()
 
     col1, col2 = st.columns(2)
@@ -120,7 +121,7 @@ def explore():
     st.title('Data Exploration & Data Visualization')
     exp = st.expander('Dataset')
     with exp:
-        st.write('The dataset is collected from the National Center of Meteorology and Hydrology. The dataset contain features such as location, year, month, date, maximum temperature, minimum temperature, relative humidity, wind speed, and rainfall. The data was recorded from 2020 to 2021 from 10 different locations. The meteorology station records the values of the environmental variable every day for each year directly from the devices in the station.')
+        st.write('The dataset is collected from the National Center of Meteorology and Hydrology. The dataset contain features such as location, year, month, maximum temperature, minimum temperature, relative humidity, wind speed, and rainfall. The data was recorded from 2000 to 2021 from 10 different locations. The meteorology station records the values of the environmental variable every day for each year directly from the devices in the station.')
         st.dataframe(df,use_container_width=True)
 
     exp = st.expander('Heatmap')
