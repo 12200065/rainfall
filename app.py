@@ -20,7 +20,7 @@ def home():
     st.title('Machin Learning')
     st.write('Machine learning (ML) is a type of artificial intelligence (AI) that allows software applications to become more accurate at predicting outcomes without being explicitly programmed to do so. Machine learning algorithms use historical data as input to predict new output values.')
     st.title('Prediction Accuracy')
-    st.write('The accuracy of the our model is 74.2 persentage on train dataset and it is 64.9 persentage on test dataset.')
+    st.write('The accuracy of the our model is 74.2 percentage on train dataset and it is 64.9 persentage on test dataset.')
     st.write()
 
     col1, col2 = st.columns(2)
